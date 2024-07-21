@@ -32,11 +32,11 @@ Puedes usar paquetes como express-validator para validación y saneamiento, y he
 
 ## Para mejorar el código y hacerlo más robusto para su uso tanto en entornos de desarrollo como de producción, puedes seguir estas prácticas recomendadas:
 
-Uso de variables de entorno: Esto permite configurar diferentes parámetros para entornos de desarrollo y producción sin modificar el código.
-Manejo de errores: Agregar manejo de errores para la conexión a la base de datos.
-Configuración de la conexión: Incluir algunas configuraciones adicionales para la conexión de la base de datos.
-Logs y depuración: Añadir logs para facilitar la depuración y monitoreo.
-Seguridad: Asegúrate de no exponer información sensible en el código fuente.
+* Uso de variables de entorno: Esto permite configurar diferentes parámetros para entornos de desarrollo y producción sin modificar el código.
+* Manejo de errores: Agregar manejo de errores para la conexión a la base de datos.
+* Configuración de la conexión: Incluir algunas configuraciones adicionales para la conexión de la base de datos.
+* Logs y depuración: Añadir logs para facilitar la depuración y monitoreo.
+* Seguridad: Asegúrate de no exponer información sensible en el código fuente.
 
 ## Paso 1: Instalar dotenv
 Primero, instala dotenv para manejar variables de entorno:
