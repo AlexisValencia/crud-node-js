@@ -7,10 +7,10 @@ EN ESTE CRUD SE VA A UTILIZAR:
 *	Morgan
 *	Mysql2
 ## INSTRUCCIÓN TERMINAL PARA LAS INSTALACIONES
-´´´Npm install npm@latest´´´ para instalar la última versión de npm
-´´´Npm install node@latest´´´ para instalar la última versión de node
-´´´Npm init –y´´´ para inicializar el package JSON de la aplicación
-´´´npm i express express-handlebars morgan mysql2´´´ para la creación de los modulos
+```Npm install npm@latest``` para instalar la última versión de npm
+```Npm install node@latest``` para instalar la última versión de node
+```Npm init –y``` para inicializar el package JSON de la aplicación
+```npm i express express-handlebars morgan mysql2``` para la creación de los modulos
 ## SE CREAN LA CARPETA SRC EN LA RAIZ Y DENTRO SE CREAN LAS SIGUIENTES CARPETAS
 -->	SRC
 *	Database
@@ -21,13 +21,13 @@ EN ESTE CRUD SE VA A UTILIZAR:
 ## SE CREA SRC EL index.js
 
 ## SE INSTALA NODEMON PARA NO TENER QUE REINICIAR EL SERVIDOR CONSTANTEMENTE
-´´´npm install nodemon@latest -D´´´
+```npm install nodemon@latest -D```
 *	Se cambia en package.json en scripts, se añade “dev”:”nodemon ./src/index,js”
-´´´npm run dev´´´ para incializar 
+```npm run dev``` para incializar 
 
 ## VALIDACION DE PARAMETROS
 Puedes usar paquetes como express-validator para validación y saneamiento, y helmet para añadir algunas cabeceras de seguridad HTTP:
-´´´npm install express-validator helmet´´´
+```npm install express-validator helmet```
 
 
 ## Para mejorar el código y hacerlo más robusto para su uso tanto en entornos de desarrollo como de producción, puedes seguir estas prácticas recomendadas:
@@ -40,7 +40,7 @@ Puedes usar paquetes como express-validator para validación y saneamiento, y he
 
 ## Paso 1: Instalar dotenv
 Primero, instala dotenv para manejar variables de entorno:
-´´´npm install dotenv´´´
+```npm install dotenv```
 
 ## Paso 2: Crear un archivo .env
 Crea un archivo .env en la raíz de tu proyecto y añade las variables de entorno necesarias:
@@ -60,7 +60,7 @@ NODE_ENV=development
 Actualiza tu archivo de configuración de la base de datos para usar las variables de entorno:
 
 database.js
-´´´
+```
 import { createPool } from "mysql2/promise"; // TENDRA CONEXION ASYNC POR ESO CON PROMISE
 import dotenv from "dotenv";
 import debug from "debug";
@@ -94,10 +94,10 @@ pool.getConnection()
     });
 
 export default pool;
-´´´
+```
 ## Paso 4: Configurar debug para Logs
 Instala debug para manejar logs de manera eficiente:
-´´´npm install debug´´´
+```npm install debug```
 
 
 
