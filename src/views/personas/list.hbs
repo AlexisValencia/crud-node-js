@@ -1,0 +1,49 @@
+<div class="container">
+    <div class="row mt-5">
+        <h3 class="fw-bold pb-2 text-uppercase text-center">Lista de personas</h3>
+        {{#if personas}}
+            <div class="col-md-12">
+                <table class="table table-light table-bordered table-striped w-100">
+                    <thead class="table-dark text-center">
+                        <tr>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Apellido</th>
+                            <th scope="col">Edad</th>
+                            <th scope="col">Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-center">
+                        {{#each personas}}
+                        <tr>
+                            <td>{{name}}</td>
+                            <td>{{lastname}}</td>
+                            <td>{{age}}</td>
+                            <td>
+                                <div class="btn-group">
+                                    <a href="/edit/{{id}}" class="btn btn-sm btn-warning"><i class="fa-regular fa-pen-to-square"></i></a>
+                                    <a href="/delete/{{id}}" class="btn btn-sm btn-danger"><i class="fa-regular fa-trash-can"></i></a>
+                                </div>
+                            </td>
+                        </tr>
+                        {{/each}}
+                    </tbody>
+                    <tfoot>
+                        <tr class="table-dark">
+                            <td colspan="4">REGISTRO DE PERSONAS <a href="/add" class="btn btn-outline-light btn-sm ms-2"><i class="fa-regular fa-user"></i> Ir a crear</a></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        {{else}}
+            <div class="card text-center mx-auto">
+                <div class="card-header">
+                    <h3>Crea una persona</h3>
+                </div>
+                <div class="card-body">
+                    <p>Clic aqu&iacute; para crear una nueva persona</p>
+                    <a href="/add" class="btn btn-primary btn-md"><i class="fa-regular fa-user"></i> Ir a crear</a>
+                </div>
+            </div>
+        {{/if}}
+    </div>
+</div>

@@ -1,0 +1,40 @@
+<div class="container p-4">
+    <div class="row">
+        <div class="col-md-4 mx-auto">
+            <div class="card text-center">
+                {{#if persona}}
+                    <div class="card-header">
+                        <h3>Editar Persona</h3>
+                    </div>
+                    <div class="card-body">
+                        <form action="/edit/{{persona.id}}" method="post">
+                            <div class="input-group mt-2">
+                                <label for="name" class="input-group-text">Nombre</label>
+                                <input class="form-control" type="text" name="name" id="name" value="{{persona.name}}" placeholder="Ingrese el nombre" autofocus required>
+                            </div>
+                            <div class="input-group mt-2">
+                                <label for="lastname" class="input-group-text">Apellido</label>
+                                <input class="form-control" type="text" name="lastname" id="lastname" value="{{persona.lastname}}" placeholder="Ingrese el apellido" required>
+                            </div>
+                            <div class="input-group mt-2">
+                                <label for="age" class="input-group-text">Edad</label>
+                                <input class="form-control" type="number" name="age" id="age" value="{{persona.age}}"  required>
+                            </div>
+                            <div class="form-group mt-4 d-grid gap-2">
+                                <button type="submit" class="btn btn-success"><i class="fa-regular fa-user"></i> Actualizar</button>
+                            </div>
+                        </form>
+                    </div>
+                {{else}}
+                    <div class="card-header">
+                        <h3>No se encontr&oacute; la persona solicitada</h3>
+                    </div>
+                    <div class="card-body">
+                        <a href="/list" class="btn btn-outline-primary">Regresar a la lista de personas</a>
+                        <a href="/" class="btn btn-outline-dark">Regresar al inicio</a>
+                    </div>
+                {{/if}}
+            </div>
+        </div>
+    </div>
+</div>
