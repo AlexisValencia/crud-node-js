@@ -7,10 +7,10 @@ EN ESTE CRUD SE VA A UTILIZAR:
 *	Morgan
 *	Mysql2
 ## INSTRUCCIÓN TERMINAL PARA LAS INSTALACIONES
-```Npm install npm@latest``` para instalar la última versión de npm
-```Npm install node@latest``` para instalar la última versión de node
-```Npm init –y``` para inicializar el package JSON de la aplicación
-```npm i express express-handlebars morgan mysql2``` para la creación de los modulos
+* ```Npm install npm@latest``` para instalar la última versión de npm
+* ```Npm install node@latest``` para instalar la última versión de node
+* ```Npm init –y``` para inicializar el package JSON de la aplicación
+* ```npm i express express-handlebars morgan mysql2``` para la creación de los modulos
 ## SE CREAN LA CARPETA SRC EN LA RAIZ Y DENTRO SE CREAN LAS SIGUIENTES CARPETAS
 -->	SRC
 *	Database
