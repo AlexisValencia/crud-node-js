@@ -11,7 +11,7 @@ EN ESTE CRUD SE VA A UTILIZAR:
 * ```Npm install node@latest``` para instalar la última versión de node
 * ```Npm init –y``` para inicializar el package JSON de la aplicación
 * ```npm i express express-handlebars morgan mysql2``` para la creación de los modulos
-## SE CREAN LA CARPETA SRC EN LA RAIZ Y DENTRO SE CREAN LAS SIGUIENTES CARPETAS
+## SE CREA LA CARPETA SRC EN LA RAIZ Y DENTRO SE CREAN LAS SIGUIENTES CARPETAS
 -->	SRC
 *	Database
 *	Public
@@ -25,7 +25,7 @@ EN ESTE CRUD SE VA A UTILIZAR:
 *	Se cambia en package.json en scripts, se añade “dev”:”nodemon ./src/index,js”
 ```npm run dev``` para incializar 
 
-## VALIDACION DE PARAMETROS
+## VALIDACIÓN DE PARAMETROS
 Puedes usar paquetes como express-validator para validación y saneamiento, y helmet para añadir algunas cabeceras de seguridad HTTP:
 ```npm install express-validator helmet```
 
